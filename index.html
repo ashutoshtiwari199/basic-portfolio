@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>MyPortfolio</title>
+</head>
+
+<body>
+    <div class="container">
+
+            <i class="fa-solid fa-bars menu"></i>
+            <i class="fa-solid fa-xmark cross "></i>
+
+        <nav class="nav-show" >
+            <ul>
+                <li>A</li>
+                <li>
+                    <a style="text-decoration: none; color: aliceblue;" href="#home" >Home</a>
+                </li>
+                <li>About</li>
+                <li>Skills</li>
+                <li>
+                    <a style="text-decoration: none; color: aliceblue;" href="#project-page" >Projects</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Intro Page -->
+        <div class="intro-page" id="home" >
+            <div class="lside">
+                <h1>Welcome</h1>
+                <ul>
+                    <li>Hi</li>
+                    <li>I'm</li>
+                    <li><span>A</span>shutosh</li>
+                </ul>
+            </div>
+            <div class="rside">
+                <img src="https://ik.imagekit.io/yix6plf6z/portfolio/blackHello_faHcsJlxT.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1659266505758"  alt="">
+            </div>
+        </div> 
+
+        <!-- Intro end -->
+
+        <div class="about">
+            
+        </div>
+
+         <div id="project-page" class="project-page">
+            <h1>My Projects</h1>
+            <div class="cards">
+
+                <div class="card">
+                    <h2>Project</h2>
+                    <img src="https://ik.imagekit.io/yix6plf6z/portfolio/Project-14_O6Kiml5vc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659266543388" alt="">
+                    <a href="https://github.com/ashutoshtiwari199/project-14" target="_blank" >
+                        <button  >Git link</button>
+                    </a>                    
+                    <a href="https://creativity-project-14.netlify.app" target="_blank" >
+                        <button>Preview</button>
+                    </a>             
+                </div>
+
+                
+
+                <div class="card">
+                    <h2>Project</h2>
+                    <img src="https://ik.imagekit.io/yix6plf6z/portfolio/project-15_JfakKCHEG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659266543796" alt="">
+                    <a href="https://www.github.com/ashutoshtiwari199/project-15" target="_blank" >
+                        <button  >Git link</button>
+                    </a>                    
+                    <a href="https://designer-project-15.netlify.app" target="_blank" >
+                        <button>Preview</button>
+                    </a>                  
+                </div>
+
+
+                <div class="card">
+                    <h2>Project </h2>
+                    <img src="https://ik.imagekit.io/yix6plf6z/portfolio/project-11_0z2RdRdY_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659266542777" alt="">
+                    <a href="https://www.github.com/ashutoshtiwari199/project-11" target="_blank" >
+                        <button  >Git link</button>
+                    </a>                    
+                    <a href="https://hosting-site-project.netlify.app" target="_blank" >
+                        <button>Preview</button>
+                    </a>                  
+                </div>
+                <div class="card">
+                    <h2>Project</h2>
+                    <img src="https://ik.imagekit.io/yix6plf6z/portfolio/project-12_spdTljp-A.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659266542593" alt="">
+                    <a href="https://www.github.com/ashutoshtiwari199/project-12" target="_blank" >
+                        <button  >Git link</button>
+                    </a>                    
+                    <a href="https://businesspage-project-12.netlify.app" target="_blank" >
+                        <button>Preview</button>
+                    </a>                  
+                </div>
+                <div class="card">
+                    <h2>Project</h2>
+                    <img src="https://ik.imagekit.io/yix6plf6z/portfolio/project-9_f_CdtOntJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659266542414" alt="">
+                    <a href="https://www.github.com/ashutoshtiwari199/project-9" target="_blank" >
+                        <button  >Git link</button>
+                    </a>                    
+                    <a href="https://gorgeous-cheesecake-03dca3.netlify.app" target="_blank" >
+                        <button>Preview</button>
+                    </a>                  
+                </div>
+                <div class="card">
+                    <h2>Project</h2>
+                    <img src="https://ik.imagekit.io/yix6plf6z/portfolio/1_5AuKK4r84.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659266544255" alt="">
+                    <a href="https://www.github.com/ashutoshtiwari199/project-one" target="_blank" >
+                        <button  >Git link</button>
+                    </a>                    
+                    <a href="https://magenta-cassata-25169f.netlify.app" target="_blank" >
+                        <button>Preview</button>
+                    </a>                  
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        let cross = document.querySelector('.cross')
+        let navigation = document.querySelector('.nav-show')
+        let burgerMenu = document.querySelector('.menu')
+        cross.addEventListener('click',()=>{
+            cross.classList.remove('show')
+            navigation.classList.remove('show')
+        })
+
+        burgerMenu.addEventListener('click',()=>{
+            navigation.classList.add('show')
+            cross.classList.add('show')
+        })
+
+    </script>
+</body>
+
+</html>
